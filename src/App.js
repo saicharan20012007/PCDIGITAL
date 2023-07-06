@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import './index.css'
+import Header1 from './components/Header1'
+import Header2 from './components/Header2'
+import ServicesSection from './components/ServicesSection'
+import MainServicesSection from './components/MainServicesSection'
+import CounterSection from './components/CounterSection'
+import ReviewsSection from './components/ReviewsSection'
+const App= () => (
+  <>
+  <Header1/>
+  <Header2/>
+  <MainServicesSection/>
+  <ServicesSection/>
+  <CounterSection/>
+  <ReviewsSection/>
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+  </>
 
-export default App;
+)
+
+export default App
